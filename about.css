@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(43, 45, 48);
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(125, 124, 124);
+    padding: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.logo-name {
+    font-size: 25px;
+    background-color: rgb(11, 88, 95);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: rgb(0, 117, 128);
+    color: white;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: #FFFFFF;
+    margin: 5px 0;
+    border-radius: 2px;
+}
+/* Toggle checkbox for mobile */
+#toggle-menu {
+    display: none;
+}
+
+#toggle-menu:checked ~ .nav-links {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide the links by default on mobile */
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger on mobile */
+    }
+
+    #toggle-menu:checked ~ .nav-links {
+        display: flex; /* Show the links when the hamburger is clicked */
+    }
+}
+
+#photo{
+    left: 450px;
+    position: relative;
+    top: 60px;
+    border-radius: 10px;
+}
+
+.about{
+    /* background-color:rgb(112, 137, 142); */
+    border:5px solid rgb(112, 137, 142);
+    color: rgb(123, 138, 133);
+    border-radius: 10%;
+    width: 350px;
+    height: 540px;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 780px;
+    top: 120px;
+    padding: 20px;
+    font-style: italic;
+}
+.Contact{
+    background-color: rgb(168, 170, 173);
+    border:2px solid black;
+    border-radius: 10%;
+    width: 270px;
+    left: 450px;
+    top: 560px;
+    position: absolute;
+    height: 100px;
+    padding: 15px;
+    
+}
+.Contact>p{
+    float: right;
+}
+#github{
+    float: right;
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+#linkdin{
+    float: right;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+
